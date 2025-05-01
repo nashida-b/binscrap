@@ -33,6 +33,10 @@ struct SecondScreen: View{
     var body: some View{
         NavigationView{
             VStack{
+                VStack{
+                    Text("Days Until Collection").font(.largeTitle)
+                    Text("0 days").font(.title)
+                }
                 NavigationLink(destination:collectionCalendar()){
                     HStack{
                         Image(systemName:"calendar")
